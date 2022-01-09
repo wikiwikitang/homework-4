@@ -19,7 +19,6 @@ export const todoApi = {
           return;
         }
         this.todos.push(todo);
-        console.log(this.todos);
         resolve({ addTodo: 'succeed' });
       }, 500);
     });
@@ -37,7 +36,6 @@ export const todoApi = {
         }
 
         this.todos[index].isCompleted = !this.todos[index].isCompleted;
-        console.log(this.todos);
         resolve({ modTodo: 'succeed' });
       }, 500);
     });
