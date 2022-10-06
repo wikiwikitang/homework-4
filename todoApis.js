@@ -7,7 +7,7 @@ export const todoApi = {
   getAllTodos: async function () {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve({ todos: this.todos });
+        resolve(JSON.parse(JSON.stringify(this.todos));
       }, 500);
     });
   },
